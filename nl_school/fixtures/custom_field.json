@@ -71,7 +71,7 @@
   "dt": "Assessment Plan",
   "fetch_from": null,
   "fetch_if_empty": 0,
-  "fieldname": "status",
+  "fieldname": "custom_status",
   "fieldtype": "Select",
   "hidden": 0,
   "hide_border": 0,

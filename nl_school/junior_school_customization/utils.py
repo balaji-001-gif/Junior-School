@@ -421,12 +421,12 @@ def update_academic_term():
 
 def close_assessment_plan():
     all_assessment_plans = frappe.get_all(
-        "Assessment Plan", filters={"status": "Open"}, fields=["name", "academic_term"]
+        "Assessment Plan", filters={"custom_status": "Open"}, fields=["name", "academic_term"]
     )
     for assessment in all_assessment_plans:
         academic_term = frappe.get_doc("Academic Term", assessment.academic_term)
         if getdate(academic_term.term_end_date) < getdate():
-            frappe.db.set_value("Assessment Plan", assessment.name, "status", "Closed")
+            frappe.db.set_value("Assessment Plan", assessment.name, "custom_status", "Closed")
 
 
 def get_education_settings():
