@@ -123,7 +123,7 @@ doctype_js = {
 # ------------
 
 # before_install = "nl_school.install.before_install"
-# after_install = "nl_school.install.after_install"
+after_install = "nl_school.install.after_install"
 
 # Uninstallation
 # ------------
