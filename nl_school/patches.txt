@@ -5,4 +5,5 @@
 [post_model_sync]
 nl_school.junior_school_customization.patches.add_company_field
 nl_school.junior_school_customization.patches.fix_customer_group_tree
+nl_school.junior_school_customization.patches.update_assessment_plan_status
 # Patches added in this section will be executed after doctypes are migrated
